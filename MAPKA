@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f58c28a6a1f67dfdab5c948af6a70a2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f58c28a6a1f67dfdab5c948af6a70a2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f58c28a6a1f67dfdab5c948af6a70a2 = L.map(
+                "map_7f58c28a6a1f67dfdab5c948af6a70a2",
+                {
+                    center: [45.0, 24.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fbe5bfd0b8fe2e9b672dc0868880dc81 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var marker_e8539425e5d1ad19b1a014604555e87b = L.marker(
+                [49.2827, 20.0187],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_86e7c1597ca27d6fc8d3d5557f70aff3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e8539425e5d1ad19b1a014604555e87b.setIcon(icon_86e7c1597ca27d6fc8d3d5557f70aff3);
+        
+    
+        var popup_ff877250240e925a531379dcbc36ba90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c0af7cd1b94da69c812dfcf7acd0f4e = $(`<div id="html_1c0af7cd1b94da69c812dfcf7acd0f4e" style="width: 100.0%; height: 100.0%;"><b>Tatry</b>: Tatry to najwyższe góry w Karpatach, znane z pięknych widoków, szlaków turystycznych i bogatej fauny. Są popularnym miejscem na piesze wędrówki i zimowe sporty.<br><a href='https://pl.wikipedia.org/wiki/Tatry' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_ff877250240e925a531379dcbc36ba90.setContent(html_1c0af7cd1b94da69c812dfcf7acd0f4e);
+        
+
+        marker_e8539425e5d1ad19b1a014604555e87b.bindPopup(popup_ff877250240e925a531379dcbc36ba90)
+        ;
+
+        
+    
+    
+            var marker_2f26204dbedf2f746fecf9fbbe4f31e7 = L.marker(
+                [48.9408, 20.3799],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_82965fa8b138d5851a6f3ecae2a02119 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f26204dbedf2f746fecf9fbbe4f31e7.setIcon(icon_82965fa8b138d5851a6f3ecae2a02119);
+        
+    
+        var popup_3f612ab362b92faf1974ccad6e747db8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afe57980c65f43fa9b6775d4b190fad0 = $(`<div id="html_afe57980c65f43fa9b6775d4b190fad0" style="width: 100.0%; height: 100.0%;"><b>Słowacki Raj</b>: Park Narodowy Słowacki Raj jest znany z malowniczych wąwozów, wodospadów i tras wspinaczkowych. To idealne miejsce dla miłośników przyrody i aktywnego wypoczynku.<br><a href='https://pl.wikipedia.org/wiki/S%C5%82owacki_Raj' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_3f612ab362b92faf1974ccad6e747db8.setContent(html_afe57980c65f43fa9b6775d4b190fad0);
+        
+
+        marker_2f26204dbedf2f746fecf9fbbe4f31e7.bindPopup(popup_3f612ab362b92faf1974ccad6e747db8)
+        ;
+
+        
+    
+    
+            var marker_813ecd4edde950f62e07ffbf0b2413b9 = L.marker(
+                [46.5563, 23.7047],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_e2fca3fe9deec11a61cdec20bc4f23bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_813ecd4edde950f62e07ffbf0b2413b9.setIcon(icon_e2fca3fe9deec11a61cdec20bc4f23bc);
+        
+    
+        var popup_3dbb31dac24f1acc3032d4b424f243c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2421bd7ae5fa0d2579b3935f971ca1e8 = $(`<div id="html_2421bd7ae5fa0d2579b3935f971ca1e8" style="width: 100.0%; height: 100.0%;"><b>Wąwóz Turda</b>: Wąwóz Turda to spektakularna formacja skalna, oferująca liczne szlaki turystyczne i zapierające dech w piersiach widoki.<br><a href='https://pl.wikipedia.org/wiki/W%C4%85w%C3%B3z_Turda' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_3dbb31dac24f1acc3032d4b424f243c9.setContent(html_2421bd7ae5fa0d2579b3935f971ca1e8);
+        
+
+        marker_813ecd4edde950f62e07ffbf0b2413b9.bindPopup(popup_3dbb31dac24f1acc3032d4b424f243c9)
+        ;
+
+        
+    
+    
+            var marker_8cccb31e626e70227c1aa52c0393ff12 = L.marker(
+                [46.816, 25.8492],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_535fc4741420e2c1fe9ab1ad02996a4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8cccb31e626e70227c1aa52c0393ff12.setIcon(icon_535fc4741420e2c1fe9ab1ad02996a4c);
+        
+    
+        var popup_28d9cb35f608d48bfeedc173dc7445f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd5a1b0057c8d9f27e2a118fc9c907dd = $(`<div id="html_dd5a1b0057c8d9f27e2a118fc9c907dd" style="width: 100.0%; height: 100.0%;"><b>Kanion Bicaz</b>: Kanion Bicaz to jeden z najpiękniejszych kanionów w Rumunii, oferujący malownicze trasy wzdłuż stromych ścian skalnych.<br><a href='https://pl.wikipedia.org/wiki/W%C4%85w%C3%B3z_Bicaz' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_28d9cb35f608d48bfeedc173dc7445f2.setContent(html_dd5a1b0057c8d9f27e2a118fc9c907dd);
+        
+
+        marker_8cccb31e626e70227c1aa52c0393ff12.bindPopup(popup_28d9cb35f608d48bfeedc173dc7445f2)
+        ;
+
+        
+    
+    
+            var marker_ef1a00c7478822bb5de6dc5b3e8909be = L.marker(
+                [47.0104, 25.9494],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_b03289476e7af8113b4b5967f1f5ddea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ef1a00c7478822bb5de6dc5b3e8909be.setIcon(icon_b03289476e7af8113b4b5967f1f5ddea);
+        
+    
+        var popup_ca2f1e9319a0443dfa7a357d30405af8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce1f70e0bf8ce3e5505777bfb1aa860b = $(`<div id="html_ce1f70e0bf8ce3e5505777bfb1aa860b" style="width: 100.0%; height: 100.0%;"><b>Jezioro Izvorul Muntelui</b>: Jezioro Izvorul Muntelui to duże jezioro zaporowe otoczone górami, idealne do relaksu i uprawiania sportów wodnych.<br><a href='https://pl.wikipedia.org/wiki/Jezioro_Izvorul_Muntelui' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_ca2f1e9319a0443dfa7a357d30405af8.setContent(html_ce1f70e0bf8ce3e5505777bfb1aa860b);
+        
+
+        marker_ef1a00c7478822bb5de6dc5b3e8909be.bindPopup(popup_ca2f1e9319a0443dfa7a357d30405af8)
+        ;
+
+        
+    
+    
+            var marker_555936ad662719957e527bb80063bd46 = L.marker(
+                [43.7044, 25.9683],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_bf531488616cffa2fc5d8ef3c7016eff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_555936ad662719957e527bb80063bd46.setIcon(icon_bf531488616cffa2fc5d8ef3c7016eff);
+        
+    
+        var popup_c35f3c9668eb2a88935ffe7a10ae440d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3133491be8a05d3de9e2b190368c2e10 = $(`<div id="html_3133491be8a05d3de9e2b190368c2e10" style="width: 100.0%; height: 100.0%;"><b>Rezerwat Przyrody Rusenski Lom</b>: Rezerwat Przyrody Rusenski Lom oferuje zjawiskowe krajobrazy z klifami i jaskiniami, a także różnorodność flory i fauny.<br><a href='https://pl.wikipedia.org/wiki/Rusenski_Lom' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_c35f3c9668eb2a88935ffe7a10ae440d.setContent(html_3133491be8a05d3de9e2b190368c2e10);
+        
+
+        marker_555936ad662719957e527bb80063bd46.bindPopup(popup_c35f3c9668eb2a88935ffe7a10ae440d)
+        ;
+
+        
+    
+    
+            var marker_55fac3f7026abad4dd399036df48d23e = L.marker(
+                [44.1125, 27.0695],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_46c268fa16d948a786102e8aab9978e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_55fac3f7026abad4dd399036df48d23e.setIcon(icon_46c268fa16d948a786102e8aab9978e6);
+        
+    
+        var popup_a71da19eb919880bd4b587abbc781fcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_153a4f4b7a5da2cd0c68125bd2b79b4a = $(`<div id="html_153a4f4b7a5da2cd0c68125bd2b79b4a" style="width: 100.0%; height: 100.0%;"><b>Jezioro Srebrna</b>: Jezioro Srebrna to urokliwe miejsce słynące z bogatego życia ptasiego i spokojnej atmosfery.<br><a href='https://pl.wikipedia.org/wiki/Rezerwat_biosfery_Srebrna' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_a71da19eb919880bd4b587abbc781fcb.setContent(html_153a4f4b7a5da2cd0c68125bd2b79b4a);
+        
+
+        marker_55fac3f7026abad4dd399036df48d23e.bindPopup(popup_a71da19eb919880bd4b587abbc781fcb)
+        ;
+
+        
+    
+    
+            var marker_39cd210362b158ea32d85323faa8e669 = L.marker(
+                [45.7489, 21.2087],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_2bde3ea2008e18bfac0f4601f679adb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39cd210362b158ea32d85323faa8e669.setIcon(icon_2bde3ea2008e18bfac0f4601f679adb8);
+        
+    
+        var popup_3e13e042a63906ee53cd770b5614f124 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f59626e9279df38b00f3763086a5fc9 = $(`<div id="html_3f59626e9279df38b00f3763086a5fc9" style="width: 100.0%; height: 100.0%;"><b>Timișoara</b>: Timișoara, znana jako 'Mały Wiedeń', jest miastem pełnym historycznych placów i architektury z czasów monarchii Habsburgów.<br><a href='https://pl.wikipedia.org/wiki/Timisoara' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_3e13e042a63906ee53cd770b5614f124.setContent(html_3f59626e9279df38b00f3763086a5fc9);
+        
+
+        marker_39cd210362b158ea32d85323faa8e669.bindPopup(popup_3e13e042a63906ee53cd770b5614f124)
+        ;
+
+        
+    
+    
+            var marker_ba02019aefb45b0ebf7f4f652ee2420d = L.marker(
+                [45.5156, 25.3678],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_d0cc414aed1e930dfd8aa5404fd5f25b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba02019aefb45b0ebf7f4f652ee2420d.setIcon(icon_d0cc414aed1e930dfd8aa5404fd5f25b);
+        
+    
+        var popup_cca898f3da5c3f804ff69ef12be0a2bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f22fe7f515e75eec788bb47cc52c50f9 = $(`<div id="html_f22fe7f515e75eec788bb47cc52c50f9" style="width: 100.0%; height: 100.0%;"><b>Zamek Bran</b>: Zamek Bran, często nazywany 'Zamkiem Drakuli', jest popularnym celem turystycznym z bogatą historią. (UNESCO)<br><a href='https://pl.wikipedia.org/wiki/Zamek_Bran' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_cca898f3da5c3f804ff69ef12be0a2bb.setContent(html_f22fe7f515e75eec788bb47cc52c50f9);
+        
+
+        marker_ba02019aefb45b0ebf7f4f652ee2420d.bindPopup(popup_cca898f3da5c3f804ff69ef12be0a2bb)
+        ;
+
+        
+    
+    
+            var marker_5078a19698090e71df4a947698c5e436 = L.marker(
+                [46.2196, 24.792],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_de8c7cb8423149a5b7dbe994424ae785 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5078a19698090e71df4a947698c5e436.setIcon(icon_de8c7cb8423149a5b7dbe994424ae785);
+        
+    
+        var popup_207b61da83ebef3b45fa138781435e33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba32e298641141abaef4d92bdfa0083b = $(`<div id="html_ba32e298641141abaef4d92bdfa0083b" style="width: 100.0%; height: 100.0%;"><b>Sighișoara</b>: Sighișoara to urokliwe miasto z dobrze zachowanym średniowiecznym centrum, znane jako miejsce narodzin Vlada Palownika. (UNESCO)<br><a href='https://pl.wikipedia.org/wiki/Sighi%C8%99oara' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_207b61da83ebef3b45fa138781435e33.setContent(html_ba32e298641141abaef4d92bdfa0083b);
+        
+
+        marker_5078a19698090e71df4a947698c5e436.bindPopup(popup_207b61da83ebef3b45fa138781435e33)
+        ;
+
+        
+    
+    
+            var marker_80b36167cd4bda8995f62a948c6d21a0 = L.marker(
+                [43.0757, 25.6172],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_c888aca0e03ccdd674decc5726e66f12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_80b36167cd4bda8995f62a948c6d21a0.setIcon(icon_c888aca0e03ccdd674decc5726e66f12);
+        
+    
+        var popup_5a4d824a49952dc822b807b01b7940f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f59ad0a67bb12ffa2134bfeff226f393 = $(`<div id="html_f59ad0a67bb12ffa2134bfeff226f393" style="width: 100.0%; height: 100.0%;"><b>Veliko Tarnovo</b>: Veliko Tarnovo to dawna stolica Bułgarii z imponującą twierdzą Tsarevets, oferującą panoramiczne widoki.<br><a href='https://pl.wikipedia.org/wiki/Wielkie_Tyrnowo' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_5a4d824a49952dc822b807b01b7940f9.setContent(html_f59ad0a67bb12ffa2134bfeff226f393);
+        
+
+        marker_80b36167cd4bda8995f62a948c6d21a0.bindPopup(popup_5a4d824a49952dc822b807b01b7940f9)
+        ;
+
+        
+    
+    
+            var marker_feae649f992e2157714995cd6b6db0c0 = L.marker(
+                [43.8356, 25.9657],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_ad58d8bf1b3f6e398a8e65825a73146e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_feae649f992e2157714995cd6b6db0c0.setIcon(icon_ad58d8bf1b3f6e398a8e65825a73146e);
+        
+    
+        var popup_cd2412b33b9aec05feb97a39281782df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e4cfe089b7a88863202fd9d06072b7e = $(`<div id="html_3e4cfe089b7a88863202fd9d06072b7e" style="width: 100.0%; height: 100.0%;"><b>Ruse</b>: Ruse, znane jako 'Mały Wiedeń', oferuje piękną architekturę z okresu belle époque nad Dunajem.<br><a href='https://pl.wikipedia.org/wiki/Ruse' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_cd2412b33b9aec05feb97a39281782df.setContent(html_3e4cfe089b7a88863202fd9d06072b7e);
+        
+
+        marker_feae649f992e2157714995cd6b6db0c0.bindPopup(popup_cd2412b33b9aec05feb97a39281782df)
+        ;
+
+        
+    
+    
+            var marker_26ec6618a32e945c0a1b77e53d294024 = L.marker(
+                [43.1028, 25.6689],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_d17082678552f0323412d2533350f6d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26ec6618a32e945c0a1b77e53d294024.setIcon(icon_d17082678552f0323412d2533350f6d3);
+        
+    
+        var popup_e72bbf1f2a2d7aa8a7d333598730de25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c95d11410499dbba6ebb8fe73b7ff2b6 = $(`<div id="html_c95d11410499dbba6ebb8fe73b7ff2b6" style="width: 100.0%; height: 100.0%;"><b>Arbanasi</b>: Arbanasi słynie z wyjątkowej architektury z czasów bułgarskiego odrodzenia i zabytkowych cerkwi.<br><a href='https://pl.wikipedia.org/wiki/Arbanasi' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_e72bbf1f2a2d7aa8a7d333598730de25.setContent(html_c95d11410499dbba6ebb8fe73b7ff2b6);
+        
+
+        marker_26ec6618a32e945c0a1b77e53d294024.bindPopup(popup_e72bbf1f2a2d7aa8a7d333598730de25)
+        ;
+
+        
+    
+    
+            var marker_b29c507781fcc268788fbfca0f3c1cf0 = L.marker(
+                [42.6605, 27.7369],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_a1d0ad286f1166abf73ad8a22c7403ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b29c507781fcc268788fbfca0f3c1cf0.setIcon(icon_a1d0ad286f1166abf73ad8a22c7403ae);
+        
+    
+        var popup_d25454b9e34295e6dba07f064e596c16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_980510d043bb241e73175a46ab8c010e = $(`<div id="html_980510d043bb241e73175a46ab8c010e" style="width: 100.0%; height: 100.0%;"><b>Nessebar</b>: </div>`)[0];
+            popup_d25454b9e34295e6dba07f064e596c16.setContent(html_980510d043bb241e73175a46ab8c010e);
+        
+
+        marker_b29c507781fcc268788fbfca0f3c1cf0.bindPopup(popup_d25454b9e34295e6dba07f064e596c16)
+        ;
+
+        
+    
+    
+            var marker_9a54a6c22a73b11c628f94a7207ae841 = L.marker(
+                [45.5984, 24.6171],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_b876d40fca4b6b0e741098f684e0cae0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9a54a6c22a73b11c628f94a7207ae841.setIcon(icon_b876d40fca4b6b0e741098f684e0cae0);
+        
+    
+        var popup_674a0fb179e490784975fd2056edf6fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4203e7767adf55166ce49a73ed972e0a = $(`<div id="html_4203e7767adf55166ce49a73ed972e0a" style="width: 100.0%; height: 100.0%;"><b>Transfagarasan</b>: Transfagarasan to jedna z najbardziej malowniczych tras w Rumunii, znana z licznych zakrętów i spektakularnych widoków na Góry Fogaraskie.<br><a href='https://pl.wikipedia.org/wiki/Droga_Transfogaraska' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_674a0fb179e490784975fd2056edf6fd.setContent(html_4203e7767adf55166ce49a73ed972e0a);
+        
+
+        marker_9a54a6c22a73b11c628f94a7207ae841.bindPopup(popup_674a0fb179e490784975fd2056edf6fd)
+        ;
+
+        
+    
+    
+            var marker_01b943ab4e81df0f7a6bdf47b00a4987 = L.marker(
+                [45.3387, 23.691],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_3690a61d8671ef1490d95499390f1477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_01b943ab4e81df0f7a6bdf47b00a4987.setIcon(icon_3690a61d8671ef1490d95499390f1477);
+        
+    
+        var popup_20f4af3b175f8bebb62e96308f5f071b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb2e7ddb124f11d1bb5dadb8cacd2acc = $(`<div id="html_cb2e7ddb124f11d1bb5dadb8cacd2acc" style="width: 100.0%; height: 100.0%;"><b>Transalpina</b>: Transalpina to najwyżej położona droga w Rumunii, oferująca przepiękne widoki na góry Parâng. Idealna dla miłośników jazdy samochodem.<br><a href='https://pl.wikipedia.org/wiki/Transalpina_(Rumunia)' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_20f4af3b175f8bebb62e96308f5f071b.setContent(html_cb2e7ddb124f11d1bb5dadb8cacd2acc);
+        
+
+        marker_01b943ab4e81df0f7a6bdf47b00a4987.bindPopup(popup_20f4af3b175f8bebb62e96308f5f071b)
+        ;
+
+        
+    
+    
+            var marker_8fa87e75bb9e7a24855062eadca7a543 = L.marker(
+                [42.7776, 25.3208],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_3d263d2fd161c413736150b8218eaee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8fa87e75bb9e7a24855062eadca7a543.setIcon(icon_3d263d2fd161c413736150b8218eaee9);
+        
+    
+        var popup_ffc5054042845049ec8800f043fdc4aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c06add724ca25ffe3f307007e93b16b8 = $(`<div id="html_c06add724ca25ffe3f307007e93b16b8" style="width: 100.0%; height: 100.0%;"><b>Przełęcz Shipka</b>: Przełęcz Shipka to malownicza droga przez Góry Stara Płanina, znana z historycznego Pomnika Wolności na szczycie.<br><a href='https://pl.wikipedia.org/wiki/Przełęcz_Szipka' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_ffc5054042845049ec8800f043fdc4aa.setContent(html_c06add724ca25ffe3f307007e93b16b8);
+        
+
+        marker_8fa87e75bb9e7a24855062eadca7a543.bindPopup(popup_ffc5054042845049ec8800f043fdc4aa)
+        ;
+
+        
+    
+    
+            var marker_ec5da2390fba425d9244813a5b659b8f = L.marker(
+                [45.3957, 25.4544],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_093675803830d726b4d35235ecb13926 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ec5da2390fba425d9244813a5b659b8f.setIcon(icon_093675803830d726b4d35235ecb13926);
+        
+    
+        var popup_ecbb70ca10313c6cb544c8680da46c30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b43970d04d10ed95096a7f72cdfa813 = $(`<div id="html_2b43970d04d10ed95096a7f72cdfa813" style="width: 100.0%; height: 100.0%;"><b>Transbucegi</b>: Transbucegi to malownicza trasa w Górach Bucegi, prowadząca do takich atrakcji jak Sfinks Bucegi i Babele.<br><a href='https://en.wikipedia.org/wiki/Transbucegi' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_ecbb70ca10313c6cb544c8680da46c30.setContent(html_2b43970d04d10ed95096a7f72cdfa813);
+        
+
+        marker_ec5da2390fba425d9244813a5b659b8f.bindPopup(popup_ecbb70ca10313c6cb544c8680da46c30)
+        ;
+
+        
+    
+    
+            var marker_ddbdacb351b7b70bb1a68d57e38f54ab = L.marker(
+                [44.4272, 26.0875],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_7e7cf75b54bdd9b7b3934ce3bc781885 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-tower", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ddbdacb351b7b70bb1a68d57e38f54ab.setIcon(icon_7e7cf75b54bdd9b7b3934ce3bc781885);
+        
+    
+        var popup_a99a80c8586b899a8db47fc0d07ead9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f92c89096b83925030b66a7a06fa489 = $(`<div id="html_3f92c89096b83925030b66a7a06fa489" style="width: 100.0%; height: 100.0%;"><b>Pałac Parlamentu</b>: Pałac Parlamentu w Bukareszcie to monumentalna budowla, będąca symbolem reżimu Ceaușescu. Drugi co do wielkości budynek na świecie.<br><a href='https://pl.wikipedia.org/wiki/Pa%C5%82ac_Parlamentu_w_Bukareszcie' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_a99a80c8586b899a8db47fc0d07ead9f.setContent(html_3f92c89096b83925030b66a7a06fa489);
+        
+
+        marker_ddbdacb351b7b70bb1a68d57e38f54ab.bindPopup(popup_a99a80c8586b899a8db47fc0d07ead9f)
+        ;
+
+        
+    
+    
+            var marker_c13d98af6e36010f4c5db40778974022 = L.marker(
+                [42.7317, 25.3931],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_3f60ab98bf2077b35b0c13ff5e1e0f0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-tower", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c13d98af6e36010f4c5db40778974022.setIcon(icon_3f60ab98bf2077b35b0c13ff5e1e0f0c);
+        
+    
+        var popup_dbd06f5a8369792f7462ec371d7783ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84aaa2673b2972445a45aac93389b04d = $(`<div id="html_84aaa2673b2972445a45aac93389b04d" style="width: 100.0%; height: 100.0%;"><b>Pomnik Buzludża</b>: Pomnik Buzludża, znany ze swojego futurystycznego wyglądu, to opuszczony symbol socjalizmu w Bułgarii.<br><a href='https://pl.wikipedia.org/wiki/Buz%C5%82ud%C5%BCa' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_dbd06f5a8369792f7462ec371d7783ee.setContent(html_84aaa2673b2972445a45aac93389b04d);
+        
+
+        marker_c13d98af6e36010f4c5db40778974022.bindPopup(popup_dbd06f5a8369792f7462ec371d7783ee)
+        ;
+
+        
+    
+    
+            var marker_d082e7984cc3ab40918241f31ff31e0a = L.marker(
+                [45.7489, 21.2087],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_5026972663742a92ad015711f715f0c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-tower", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d082e7984cc3ab40918241f31ff31e0a.setIcon(icon_5026972663742a92ad015711f715f0c9);
+        
+    
+        var popup_f7bfee01e893aee1c3052f90ffaa35c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e477ea61a4a14cdb4f4770d7f74e0ec5 = $(`<div id="html_e477ea61a4a14cdb4f4770d7f74e0ec5" style="width: 100.0%; height: 100.0%;"><b>Muzeum Komunizmu w Timișoarze</b>: Muzeum w Timișoarze oferuje wgląd w życie w okresie komunizmu i jest miejscem związanym z początkiem rumuńskiej rewolucji.<br><a href='https://pl.wikipedia.org/wiki/Rewolucja_rumu%C5%84ska_(1989)' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_f7bfee01e893aee1c3052f90ffaa35c5.setContent(html_e477ea61a4a14cdb4f4770d7f74e0ec5);
+        
+
+        marker_d082e7984cc3ab40918241f31ff31e0a.bindPopup(popup_f7bfee01e893aee1c3052f90ffaa35c5)
+        ;
+
+        
+    
+    
+            var marker_9c72a00477f37084e733dc0fe2cf699f = L.marker(
+                [42.6194, 25.3966],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_d48c7f61f7ef466a596a1a1427e9d13c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c72a00477f37084e733dc0fe2cf699f.setIcon(icon_d48c7f61f7ef466a596a1a1427e9d13c);
+        
+    
+        var popup_c99bd30d271ee8f62a81a822d8c09f2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3e7e01f4e1be237e369ae50831ebe6c = $(`<div id="html_d3e7e01f4e1be237e369ae50831ebe6c" style="width: 100.0%; height: 100.0%;"><b>Kazanłyk</b>: Kazanłyk to centrum Doliny Róż, znane z produkcji olejku różanego i trackiego grobowca wpisanego na listę UNESCO.<br><a href='https://pl.wikipedia.org/wiki/Kazan%C5%82yk' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_c99bd30d271ee8f62a81a822d8c09f2c.setContent(html_d3e7e01f4e1be237e369ae50831ebe6c);
+        
+
+        marker_9c72a00477f37084e733dc0fe2cf699f.bindPopup(popup_c99bd30d271ee8f62a81a822d8c09f2c)
+        ;
+
+        
+    
+    
+            var marker_7c21429642b91a275b0c5132e5668fce = L.marker(
+                [42.4237, 25.6345],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_86a97f4267a09c08cf17571991a468a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c21429642b91a275b0c5132e5668fce.setIcon(icon_86a97f4267a09c08cf17571991a468a0);
+        
+    
+        var popup_9e8dea768340be5075c16caf97f35d1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63304487c8dd0bbacb649ae60221a0b8 = $(`<div id="html_63304487c8dd0bbacb649ae60221a0b8" style="width: 100.0%; height: 100.0%;"><b>Stara Zagora</b>: Stara Zagora oferuje ruiny starożytnego miasta Augusta Trajana i bogatą historię sięgającą starożytności.<br><a href='https://pl.wikipedia.org/wiki/Stara_Zagora' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_9e8dea768340be5075c16caf97f35d1c.setContent(html_63304487c8dd0bbacb649ae60221a0b8);
+        
+
+        marker_7c21429642b91a275b0c5132e5668fce.bindPopup(popup_9e8dea768340be5075c16caf97f35d1c)
+        ;
+
+        
+    
+    
+            var marker_be50da6fa0a8416e14148feb907f5db9 = L.marker(
+                [42.5, 25.9],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_9d1476e6540ffdc5e4e6cc067bc13b9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be50da6fa0a8416e14148feb907f5db9.setIcon(icon_9d1476e6540ffdc5e4e6cc067bc13b9c);
+        
+    
+        var popup_e4f9a9db7397ba2d6f25dbb1f08e8f8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16d1dfc14156319db8ba2ea5ba624315 = $(`<div id="html_16d1dfc14156319db8ba2ea5ba624315" style="width: 100.0%; height: 100.0%;"><b>Jezioro Rozboryszko</b>: Jezioro Rozboryszko to piękne jezioro idealne na piknik i obserwację przyrody w ciszy i spokoju.</div>`)[0];
+            popup_e4f9a9db7397ba2d6f25dbb1f08e8f8b.setContent(html_16d1dfc14156319db8ba2ea5ba624315);
+        
+
+        marker_be50da6fa0a8416e14148feb907f5db9.bindPopup(popup_e4f9a9db7397ba2d6f25dbb1f08e8f8b)
+        ;
+
+        
+    
+    
+            var marker_646d8f97091efbbb6f7865fd8e064fea = L.marker(
+                [42.6815, 26.322],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_b64171cd29de525fbeddcbd1efbcaba6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_646d8f97091efbbb6f7865fd8e064fea.setIcon(icon_b64171cd29de525fbeddcbd1efbcaba6);
+        
+    
+        var popup_6262e3e6f2ac3a6cabfc4f5228ae068b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4774af23f377b15519bc5d1246ce8995 = $(`<div id="html_4774af23f377b15519bc5d1246ce8995" style="width: 100.0%; height: 100.0%;"><b>Sliwen</b>: Sliwen jest znane z tradycyjnej bułgarskiej architektury i pięknych widoków na góry Stara Płanina.<br><a href='https://pl.wikipedia.org/wiki/Sliwen' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_6262e3e6f2ac3a6cabfc4f5228ae068b.setContent(html_4774af23f377b15519bc5d1246ce8995);
+        
+
+        marker_646d8f97091efbbb6f7865fd8e064fea.bindPopup(popup_6262e3e6f2ac3a6cabfc4f5228ae068b)
+        ;
+
+        
+    
+    
+            var marker_0984e88a290955f7a62722d4331c1111 = L.marker(
+                [42.7092, 26.3364],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_39c4dad02e42020f846314c57d6d8d97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0984e88a290955f7a62722d4331c1111.setIcon(icon_39c4dad02e42020f846314c57d6d8d97);
+        
+    
+        var popup_74eefccae68606926de578dc751e839f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a86445601d6112d9c9eb27bae72ffc41 = $(`<div id="html_a86445601d6112d9c9eb27bae72ffc41" style="width: 100.0%; height: 100.0%;"><b>Rezerwat Przyrody Sinite Kamani</b>: Rezerwat Przyrody Sinite Kamani jest znany z niebieskich skał i malowniczych szlaków turystycznych. Idealny na piesze wędrówki.<br><a href='https://pl.wikipedia.org/wiki/Sinite_Kamani' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_74eefccae68606926de578dc751e839f.setContent(html_a86445601d6112d9c9eb27bae72ffc41);
+        
+
+        marker_0984e88a290955f7a62722d4331c1111.bindPopup(popup_74eefccae68606926de578dc751e839f)
+        ;
+
+        
+    
+    
+            var marker_0be75438aec94c1228fecacd7e62a918 = L.marker(
+                [46.0548, 25.0918],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_a82947f3f70b95dc98f3fe427271d3c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0be75438aec94c1228fecacd7e62a918.setIcon(icon_a82947f3f70b95dc98f3fe427271d3c9);
+        
+    
+        var popup_f28081f96bb4f804fbafb03448dd6ef4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73284bcef76e2158dcfa130132e37c84 = $(`<div id="html_73284bcef76e2158dcfa130132e37c84" style="width: 100.0%; height: 100.0%;"><b>Viscri</b>: Viscri to malownicza wioska z dobrze zachowaną architekturą saksońską, wpisana na listę UNESCO.<br><a href='https://pl.wikipedia.org/wiki/Viscri' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_f28081f96bb4f804fbafb03448dd6ef4.setContent(html_73284bcef76e2158dcfa130132e37c84);
+        
+
+        marker_0be75438aec94c1228fecacd7e62a918.bindPopup(popup_f28081f96bb4f804fbafb03448dd6ef4)
+        ;
+
+        
+    
+    
+            var marker_e01fba0dcf7c43db25daa9420765eacf = L.marker(
+                [45.7739, 23.9284],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_96e89894815bb1b418e392fc6f453fc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e01fba0dcf7c43db25daa9420765eacf.setIcon(icon_96e89894815bb1b418e392fc6f453fc9);
+        
+    
+        var popup_2d85e5eb40144d7c3d09a48b4b34b048 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_596e0f3ac691dba06c9652a299058c6e = $(`<div id="html_596e0f3ac691dba06c9652a299058c6e" style="width: 100.0%; height: 100.0%;"><b>Sibiel</b>: Sibiel jest znany z Muzeum Ikon na Szkle i tradycyjnej atmosfery rumuńskiej wioski.<br><a href='https://en.wikipedia.org/wiki/Sibiel' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_2d85e5eb40144d7c3d09a48b4b34b048.setContent(html_596e0f3ac691dba06c9652a299058c6e);
+        
+
+        marker_e01fba0dcf7c43db25daa9420765eacf.bindPopup(popup_2d85e5eb40144d7c3d09a48b4b34b048)
+        ;
+
+        
+    
+    
+            var marker_b6bc4877136627629e71980c9c8a7019 = L.marker(
+                [46.1363, 24.5217],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_223e57d276937c59384c02d0e5e94475 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b6bc4877136627629e71980c9c8a7019.setIcon(icon_223e57d276937c59384c02d0e5e94475);
+        
+    
+        var popup_f76831b3e30e28cab46ecb1a96ed436e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b4e6b102769cda8f571d726b64ba5cf = $(`<div id="html_9b4e6b102769cda8f571d726b64ba5cf" style="width: 100.0%; height: 100.0%;"><b>Biertan</b>: Biertan to wioska z imponującym kościołem warownym, wpisana na listę UNESCO za swoje znaczenie historyczne.<br><a href='https://pl.wikipedia.org/wiki/Biertan' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_f76831b3e30e28cab46ecb1a96ed436e.setContent(html_9b4e6b102769cda8f571d726b64ba5cf);
+        
+
+        marker_b6bc4877136627629e71980c9c8a7019.bindPopup(popup_f76831b3e30e28cab46ecb1a96ed436e)
+        ;
+
+        
+    
+    
+            var marker_253cb328e1df879a80c0db8e74a5018f = L.marker(
+                [42.901, 25.4314],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_734a2307e33081eb1df2f55f42037b24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_253cb328e1df879a80c0db8e74a5018f.setIcon(icon_734a2307e33081eb1df2f55f42037b24);
+        
+    
+        var popup_b89f05a8fe33d19f7cc2582d1e51c32f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30580146485abbbae50573646a3003d9 = $(`<div id="html_30580146485abbbae50573646a3003d9" style="width: 100.0%; height: 100.0%;"><b>Bozhentsi</b>: Bozhentsi to wioska z charakterystyczną architekturą z czasów bułgarskiego odrodzenia.<br><a href='https://pl.wikipedia.org/wiki/Bo%C5%BCency' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_b89f05a8fe33d19f7cc2582d1e51c32f.setContent(html_30580146485abbbae50573646a3003d9);
+        
+
+        marker_253cb328e1df879a80c0db8e74a5018f.bindPopup(popup_b89f05a8fe33d19f7cc2582d1e51c32f)
+        ;
+
+        
+    
+    
+            var marker_f694daa8e3a1f0d7e74bf5ed8c0cc96b = L.marker(
+                [41.6309, 23.8451],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_cc95c2624864a77f8efbfb69ce7b0641 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f694daa8e3a1f0d7e74bf5ed8c0cc96b.setIcon(icon_cc95c2624864a77f8efbfb69ce7b0641);
+        
+    
+        var popup_882470d9c40ded6c2ac256306058cbc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df1aa2c826c02bc6bed71bb05f02ffb5 = $(`<div id="html_df1aa2c826c02bc6bed71bb05f02ffb5" style="width: 100.0%; height: 100.0%;"><b>Leshten</b>: Leshten oferuje tradycyjne domy i piękne widoki na góry Pirin, idealne na relaks.<br><a href='https://en.wikipedia.org/wiki/Leshten' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_882470d9c40ded6c2ac256306058cbc3.setContent(html_df1aa2c826c02bc6bed71bb05f02ffb5);
+        
+
+        marker_f694daa8e3a1f0d7e74bf5ed8c0cc96b.bindPopup(popup_882470d9c40ded6c2ac256306058cbc3)
+        ;
+
+        
+    
+    
+            var marker_3b0786934c7af1c45f601d504f34a4d2 = L.marker(
+                [42.8321, 26.4613],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_e9e4285218a7203131d6a562fa1f11a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3b0786934c7af1c45f601d504f34a4d2.setIcon(icon_e9e4285218a7203131d6a562fa1f11a3);
+        
+    
+        var popup_b34bf8e004b074995c029947dc800aae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a069472419f1c40a27011552d144cf03 = $(`<div id="html_a069472419f1c40a27011552d144cf03" style="width: 100.0%; height: 100.0%;"><b>Zheravna</b>: Zheravna jest znana z dobrze zachowanej architektury i malowniczych krajobrazów.<br><a href='https://pl.wikipedia.org/wiki/%C5%BBerawna' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_b34bf8e004b074995c029947dc800aae.setContent(html_a069472419f1c40a27011552d144cf03);
+        
+
+        marker_3b0786934c7af1c45f601d504f34a4d2.bindPopup(popup_b34bf8e004b074995c029947dc800aae)
+        ;
+
+        
+    
+    
+            var marker_f9d1afd259ef5d2ec65e70c5c0f5441d = L.marker(
+                [42.6935, 27.7089],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_22e6b61de1a082577dd37a7e6113dabe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f9d1afd259ef5d2ec65e70c5c0f5441d.setIcon(icon_22e6b61de1a082577dd37a7e6113dabe);
+        
+    
+        var popup_65e01eff944304437e68836a0f41b164 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd910d6a063d29c83ed00a38db448349 = $(`<div id="html_dd910d6a063d29c83ed00a38db448349" style="width: 100.0%; height: 100.0%;"><b>Sunny Beach</b>: Sunny Beach to jedna z najpopularniejszych plaż w Bułgarii, znana z piaszczystego wybrzeża i licznych atrakcji turystycznych.</div>`)[0];
+            popup_65e01eff944304437e68836a0f41b164.setContent(html_dd910d6a063d29c83ed00a38db448349);
+        
+
+        marker_f9d1afd259ef5d2ec65e70c5c0f5441d.bindPopup(popup_65e01eff944304437e68836a0f41b164)
+        ;
+
+        
+    
+    
+            var marker_b8b7df972d3c704b21464a2c742cb417 = L.marker(
+                [42.4228, 27.6942],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_6f638f9c52067ec1bb6e89169406b027 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b8b7df972d3c704b21464a2c742cb417.setIcon(icon_6f638f9c52067ec1bb6e89169406b027);
+        
+    
+        var popup_93d25e0e377cbc2c687b11726aa52eb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_608c6ecb1657998b3dd85b23e8d2e0c8 = $(`<div id="html_608c6ecb1657998b3dd85b23e8d2e0c8" style="width: 100.0%; height: 100.0%;"><b>Sozopol</b>: Sozopol oferuje malownicze plaże oraz historyczne stare miasto z urokliwymi uliczkami i zabytkowymi budynkami.</div>`)[0];
+            popup_93d25e0e377cbc2c687b11726aa52eb9.setContent(html_608c6ecb1657998b3dd85b23e8d2e0c8);
+        
+
+        marker_b8b7df972d3c704b21464a2c742cb417.bindPopup(popup_93d25e0e377cbc2c687b11726aa52eb9)
+        ;
+
+        
+    
+    
+            var marker_fd4ad105f8fb1c45969cba00124e7058 = L.marker(
+                [42.6564, 27.7339],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_a243a29df5ea9182b2ca753127f3a111 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fd4ad105f8fb1c45969cba00124e7058.setIcon(icon_a243a29df5ea9182b2ca753127f3a111);
+        
+    
+        var popup_d2693069aae01236c79e3eae3f06c3fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a02a666c149727b2d3f6869b62ef6508 = $(`<div id="html_a02a666c149727b2d3f6869b62ef6508" style="width: 100.0%; height: 100.0%;"><b>Nessebar South Beach</b>: Plaża Południowa w Nessebar to idealne miejsce na relaks, blisko historycznego miasta wpisanego na listę UNESCO.</div>`)[0];
+            popup_d2693069aae01236c79e3eae3f06c3fe.setContent(html_a02a666c149727b2d3f6869b62ef6508);
+        
+
+        marker_fd4ad105f8fb1c45969cba00124e7058.bindPopup(popup_d2693069aae01236c79e3eae3f06c3fe)
+        ;
+
+        
+    
+    
+            var marker_b02114e0d5aa3edc43478cfffdeb6380 = L.marker(
+                [42.5665, 27.6156],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_5c7048bc71e78858eb9a02445c1e07a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b02114e0d5aa3edc43478cfffdeb6380.setIcon(icon_5c7048bc71e78858eb9a02445c1e07a9);
+        
+    
+        var popup_6a07286f5fe4ba84269e4b47dd6cae1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b72d8dbe0a82c947c1dd52b36746b19 = $(`<div id="html_7b72d8dbe0a82c947c1dd52b36746b19" style="width: 100.0%; height: 100.0%;"><b>Pomorie Beach</b>: Pomorie to spokojna plaża, znana z leczniczego błota i tradycyjnej bułgarskiej atmosfery.</div>`)[0];
+            popup_6a07286f5fe4ba84269e4b47dd6cae1a.setContent(html_7b72d8dbe0a82c947c1dd52b36746b19);
+        
+
+        marker_b02114e0d5aa3edc43478cfffdeb6380.bindPopup(popup_6a07286f5fe4ba84269e4b47dd6cae1a)
+        ;
+
+        
+    
+    
+            var marker_427b783a1f493d89c98b2557f40fa259 = L.marker(
+                [47.4979, 19.0402],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_ded70bf8104e4eda355cac082bc67137 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_427b783a1f493d89c98b2557f40fa259.setIcon(icon_ded70bf8104e4eda355cac082bc67137);
+        
+    
+        var popup_3010b747680d74fb0c1475058c3dfd02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_227ef68e2f226b93208d59954984098b = $(`<div id="html_227ef68e2f226b93208d59954984098b" style="width: 100.0%; height: 100.0%;"><b>Budapeszt</b>: Budapeszt to stolica Węgier, pełna imponującej architektury, zabytków i kulturalnych atrakcji.<br><a href='https://pl.wikipedia.org/wiki/Budapeszt' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_3010b747680d74fb0c1475058c3dfd02.setContent(html_227ef68e2f226b93208d59954984098b);
+        
+
+        marker_427b783a1f493d89c98b2557f40fa259.bindPopup(popup_3010b747680d74fb0c1475058c3dfd02)
+        ;
+
+        
+    
+    
+            var marker_ae78d61368e4dab3f9febb6e8566dc8f = L.marker(
+                [47.9025, 20.377],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_6a9f5996b385c9259d2d479c87267f61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae78d61368e4dab3f9febb6e8566dc8f.setIcon(icon_6a9f5996b385c9259d2d479c87267f61);
+        
+    
+        var popup_6a19e972f03031346675e6e00d641eb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81f7cb63886b9fe261c12e1f9cf35ea0 = $(`<div id="html_81f7cb63886b9fe261c12e1f9cf35ea0" style="width: 100.0%; height: 100.0%;"><b>Eger</b>: Eger to malownicze miasto znane z wina Egri Bikavér i pięknej architektury barokowej.<br><a href='https://pl.wikipedia.org/wiki/Eger' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_6a19e972f03031346675e6e00d641eb1.setContent(html_81f7cb63886b9fe261c12e1f9cf35ea0);
+        
+
+        marker_ae78d61368e4dab3f9febb6e8566dc8f.bindPopup(popup_6a19e972f03031346675e6e00d641eb1)
+        ;
+
+        
+    
+    
+            var marker_d70b9d98e6e5769211811e4da3b3d620 = L.marker(
+                [47.5316, 21.6273],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_99797d6dc0af47c08b4de9b99cdbd06c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d70b9d98e6e5769211811e4da3b3d620.setIcon(icon_99797d6dc0af47c08b4de9b99cdbd06c);
+        
+    
+        var popup_a43edbd200dcd65242361fe691cb95ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7a74c269717bdc1f4439d7171c2abe6 = $(`<div id="html_c7a74c269717bdc1f4439d7171c2abe6" style="width: 100.0%; height: 100.0%;"><b>Debreczyn</b>: Debreczyn to kulturalne i edukacyjne centrum Węgier, znane z Wielkiego Kościoła Reformowanego.<br><a href='https://pl.wikipedia.org/wiki/Debreczyn' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_a43edbd200dcd65242361fe691cb95ae.setContent(html_c7a74c269717bdc1f4439d7171c2abe6);
+        
+
+        marker_d70b9d98e6e5769211811e4da3b3d620.bindPopup(popup_a43edbd200dcd65242361fe691cb95ae)
+        ;
+
+        
+    
+    
+            var marker_557c6093dc2864d7a02807103bc9ed6a = L.marker(
+                [46.253, 20.1414],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_5b5f5a0581117d5deb98ad6d67e6cacf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_557c6093dc2864d7a02807103bc9ed6a.setIcon(icon_5b5f5a0581117d5deb98ad6d67e6cacf);
+        
+    
+        var popup_765e1d33252a9f5e0479a6eaf5cb9ee2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb119dc48aa701c2b8dce9abd998fc3c = $(`<div id="html_bb119dc48aa701c2b8dce9abd998fc3c" style="width: 100.0%; height: 100.0%;"><b>Szeged</b>: Szeged, znane jako 'miasto słońca', oferuje piękne place, katedrę i festiwale kulturalne.<br><a href='https://pl.wikipedia.org/wiki/Szeged' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_765e1d33252a9f5e0479a6eaf5cb9ee2.setContent(html_bb119dc48aa701c2b8dce9abd998fc3c);
+        
+
+        marker_557c6093dc2864d7a02807103bc9ed6a.bindPopup(popup_765e1d33252a9f5e0479a6eaf5cb9ee2)
+        ;
+
+        
+    
+    
+            var marker_fedb4d4227d0bddf059817cd06b51259 = L.marker(
+                [47.0722, 21.9217],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_905d86f42732042a5aac327aef5a2cf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fedb4d4227d0bddf059817cd06b51259.setIcon(icon_905d86f42732042a5aac327aef5a2cf7);
+        
+    
+        var popup_82ddb683dcfd1032dd76808678d964d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_780df19f686a50e961879ecb3c63cbbd = $(`<div id="html_780df19f686a50e961879ecb3c63cbbd" style="width: 100.0%; height: 100.0%;"><b>Oradea</b>: Oradea jest znana z pięknej architektury secesyjnej i odrestaurowanych budynków historycznych.<br><a href='https://pl.wikipedia.org/wiki/Oradea' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_82ddb683dcfd1032dd76808678d964d4.setContent(html_780df19f686a50e961879ecb3c63cbbd);
+        
+
+        marker_fedb4d4227d0bddf059817cd06b51259.bindPopup(popup_82ddb683dcfd1032dd76808678d964d4)
+        ;
+
+        
+    
+    
+            var marker_0726774ce2c71becd3fe1c1bd9adfc56 = L.marker(
+                [46.1866, 21.3123],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_9172325a957ec272cb5ebcb8200535f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0726774ce2c71becd3fe1c1bd9adfc56.setIcon(icon_9172325a957ec272cb5ebcb8200535f5);
+        
+    
+        var popup_8ddab07fac4162591403f6619aeef647 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e04b17b21b0084d1ef6232732f07a1b = $(`<div id="html_6e04b17b21b0084d1ef6232732f07a1b" style="width: 100.0%; height: 100.0%;"><b>Arad</b>: Arad to miasto pełne imponującej architektury, w tym Teatru Narodowego i zabytkowego centrum.<br><a href='https://pl.wikipedia.org/wiki/Arad_(miasto)' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_8ddab07fac4162591403f6619aeef647.setContent(html_6e04b17b21b0084d1ef6232732f07a1b);
+        
+
+        marker_0726774ce2c71becd3fe1c1bd9adfc56.bindPopup(popup_8ddab07fac4162591403f6619aeef647)
+        ;
+
+        
+    
+    
+            var marker_51b149e2384c6ae4d4ae688f139865e7 = L.marker(
+                [46.583, 22.75],
+                {}
+            ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+    
+            var icon_34cdbfa4416dc8a16acb72481812e606 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_51b149e2384c6ae4d4ae688f139865e7.setIcon(icon_34cdbfa4416dc8a16acb72481812e606);
+        
+    
+        var popup_ad4b4d197c0678edfb085f9cf0961cb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5e656702fb80fc8dbdf78d147d2054d = $(`<div id="html_a5e656702fb80fc8dbdf78d147d2054d" style="width: 100.0%; height: 100.0%;"><b>Park Narodowy Apuseni</b>: Park Narodowy Apuseni to idealne miejsce dla miłośników przyrody, oferujące piękne krajobrazy i jaskinie.<br><a href='https://pl.wikipedia.org/wiki/Park_Narodowy_Apuseni' target='_blank'>Wikipedia</a></div>`)[0];
+            popup_ad4b4d197c0678edfb085f9cf0961cb3.setContent(html_a5e656702fb80fc8dbdf78d147d2054d);
+        
+
+        marker_51b149e2384c6ae4d4ae688f139865e7.bindPopup(popup_ad4b4d197c0678edfb085f9cf0961cb3)
+        ;
+
+        
+    
+    
+            ant_path_a88dbbd59c0d2b12018a4577038f612c = L.polyline.antPath(
+              [[50.0647, 19.945], [49.2827, 20.0187], [48.9408, 20.3799], [46.5563, 23.7047], [45.7489, 21.2087], [45.5156, 25.3678], [46.2196, 24.792], [43.8356, 25.9657], [43.0757, 25.6172], [42.6194, 25.3966], [42.4237, 25.6345], [42.6815, 26.322], [42.5048, 27.4626]],
+              {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_7f58c28a6a1f67dfdab5c948af6a70a2);
+        
+</script>
+</html>
